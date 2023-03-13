@@ -297,20 +297,52 @@ body {
       }
     }
 
-     .dataTables_filter label [aria-controls=DataTables_Table_0]{
+    .dataTables_filter label [aria-controls="DataTables_Table_0"] {
       background-color: #1a1a22;
       border: 1px solid #000 !important;
-
-     }
+    }
   }
   [data-kt-app-layout="light-sidebar"]
-  .app-sidebar-menu
-  .menu
-  > .menu-item
-  > .menu-link.active {
-  background-color: #2d2d3a;
-  span {
-    color: var(--whiteColor) !important;
+    .app-sidebar-menu
+    .menu
+    > .menu-item
+    > .menu-link.active {
+    background-color: #2d2d3a;
+    span {
+      color: var(--whiteColor) !important;
+    }
   }
 }
+
+.customForm {
+  width: calc(100% - 40px);
+  margin: 20px auto;
+  // box-shadow: 0px 8px 20px #00000010;
+  padding:32px 24px;
+  border-radius: 16px;
+display: flex;
+flex-direction: column;
+gap: 24px;
+  label{
+    font-weight: bold;
+  }
+ .btn-dark{
+  background-color: #E5DED1;
+  color: #000;
+ }
+}
+
+.select2-dropdown,
+.select2 {
+  direction: rtl;
+}
+
+.select2-container--bootstrap5 .select2-selection--multiple:not(.form-select-sm):not(.form-select-lg) .select2-selection__choice .select2-selection__choice__display{
+  margin-left: 0;
+  margin-right: 1.1rem;
+}
+
+.select2-container--bootstrap5 .select2-dropdown .select2-results__option.select2-results__option--selected:after{
+  right: unset;
+  left: 1.25rem;
 }
