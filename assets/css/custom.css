@@ -283,7 +283,7 @@ body {
 }
 
 .customForm {
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   margin: 20px auto;
   padding: 32px 24px;
   border-radius: 16px;
